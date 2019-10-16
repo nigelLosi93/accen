@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<form action="/comment" method="post">
+    <div>
+        <label for="name">Metti il tuo nome:</label>
+        <input type="text" id="name" name="sender" maxlength="50" size="100" placeholder="Scrivi il tuo nome" required>
+    </div>
+    <div>
+        <label for="msg">Scrivi un messaggio:</label>
+        <textarea id="msg" name="message" placeholder="Scrivi un messaggio" size="100" required></textarea>
+    </div>
+    <div>
+        <label for="pwd">Password</label>
+        <input type="password" name="pwd" maxlength="50" required size="100" placeholder="pwd">
+    </div>
+    <div>
+        <input type="hidden" name="invisible" value="notShowed">
+    </div>
+    <div>
+        <input type="date" name="milestone">
+    </div>
+    <div>
+        <button type="submit">Send</button>
+    </div>
+
+</form>
+
+</html>
