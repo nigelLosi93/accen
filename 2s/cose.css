@@ -99,12 +99,12 @@ input:hover {
 table {
     border: 2px solid black;
     border-collapse: collapse;
-    width: 50%;
+    width: 25%;
 }
 
 td, th {
     border: 1px solid red;
-    padding: 30px;
+    padding: 10px;
     text-align: center;
 }
 
@@ -118,4 +118,5 @@ td {
 
 tr{
     font-family: serif;
+    font-size: 80px;
 }
