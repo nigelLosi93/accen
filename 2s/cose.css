@@ -89,15 +89,22 @@ input:hover {
     color: blue;
 }
 
+/*si commenta così*/
+/*l'elemento table viene modificato con border, collapse e width*/
+/*del viewport*/
+/*gli altri due elementi che vivono dentro table sono td e th che*/
+/*rispettivamente sono i labels e gli elementi*/
+/*th e td sono separati alla fine*/
+/*e se lavoro con tr?*/
 table {
     border: 2px solid black;
     border-collapse: collapse;
-    Width: 50%;
+    width: 50%;
 }
 
 td, th {
     border: 1px solid red;
-    padding: 3px;
+    padding: 30px;
     text-align: center;
 }
 
@@ -107,4 +114,8 @@ th {
 
 td {
     background-color: lightgreen;
+}
+
+tr{
+    font-family: serif;
 }
