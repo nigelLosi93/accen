@@ -1,105 +1,110 @@
-p{
-    color:red;
+p {
+    color: red;
 }
 
 body {
     background-color: white;
-} 
+}
 
-h1[class="red"]{
-    color:salmon;
+h1[class="red"] {
+    color: salmon;
     border: 5px solid red;
 }
 
-h2{
-    color:limegreen;
+h2 {
+    color: limegreen;
     border: 4px dotted blue;
 }
 
-h3{
-    color:maroon
+h3 {
+    color: maroon
 }
 
-div{
+div {
     opacity: 0.3;
     background-color: mediumblue;
 }
 
-input{
-    color:yellow;
+input {
+    color: yellow;
 }
 
-input[type=reset]{
-    color:skyblue;
+input[type=reset] {
+    color: skyblue;
 }
 
-span{
-    color:hotpink;
+span {
+    color: hotpink;
 }
 
-h1[class="hiding"]{
-    color:green;
+h1[class="hiding"] {
+    color: green;
 }
 
-h1[class="hiding"]:hover{
-    color:purple
+h1[class="hiding"]:hover {
+    color: purple
 }
 
-p#par{
-    color:fuchsia
+p#par {
+    color: fuchsia
 }
 
-body{
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-h4,h5,h6{
-    color:darkslategray
+h4, h5, h6 {
+    color: darkslategray
 }
 
-p[class="hiding"]{
-    color:green;
+p[class="hiding"] {
+    color: green;
 }
 
-p[class="hiding"]:hover{
-    color:purple
+p[class="hiding"]:hover {
+    color: purple
 }
 
-p.hiding{
-    color:wheat;
+p.hiding {
+    color: wheat;
 }
 
-span.selecting{
-    color:cornflowerblue;
+span.selecting {
+    color: cornflowerblue;
 }
 
-input[type=text]{
-    color:red;
+input[type=text] {
+    color: red;
 }
 
 [type=text] {
     background-color: olive;
-    }
-    [type=number] {
-    background-color: yellow;
-    }
-    input:hover {
-    color: blue;
-    }
+}
 
-    table {
-        border: 2px solid black;
-        border-collapse: collapse;
-        Width: 50%;
-        }
-        td, th {
-        border: 1px solid red;
-        padding: 3px;
-        text-align: center;
-        }
-        th {
-        background-color: lightblue;
-        }
-        td {
-        background-color: lightgreen;
-        }
+[type=number] {
+    background-color: yellow;
+}
+
+input:hover {
+    color: blue;
+}
+
+table {
+    border: 2px solid black;
+    border-collapse: collapse;
+    Width: 50%;
+}
+
+td, th {
+    border: 1px solid red;
+    padding: 3px;
+    text-align: center;
+}
+
+th {
+    background-color: lightblue;
+}
+
+td {
+    background-color: lightgreen;
+}
