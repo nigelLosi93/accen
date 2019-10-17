@@ -1,0 +1,78 @@
+p{
+    color:red;
+}
+
+body {
+    background-color: wheat;
+} 
+
+h1[class="red"]{
+    color:salmon;
+    border: 5px solid red;
+}
+
+h2{
+    color:limegreen;
+    border: 4px dotted blue;
+}
+
+h3{
+    color:maroon
+}
+
+div{
+    opacity: 0.3;
+    background-color: mediumblue;
+}
+
+input{
+    color:yellow;
+}
+
+input[type=reset]{
+    color:skyblue;
+}
+
+span{
+    color:hotpink;
+}
+
+h1[class="hiding"]{
+    color:green;
+}
+
+h1[class="hiding"]:hover{
+    color:purple
+}
+
+p#par{
+    color:fuchsia
+}
+
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h4,h5,h6{
+    color:darkslategray
+}
+
+p[class="hiding"]{
+    color:green;
+}
+
+p[class="hiding"]:hover{
+    color:purple
+}
+
+p.hiding{
+    color:wheat;
+}
+
+span.selecting{
+    color:cornflowerblue;
+}
+
+input[type=text]{
+    color:red;
+}

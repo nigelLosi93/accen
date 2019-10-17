@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="cose.css" />
+</head>
+
+<body>
+    <h1 class="red">ROSSO</h1>
+    qua invece, bhe chiaramente no perchè non gli ho detto che elemento
+    <p>ciao adesso sono rosso</p>
+    adesso no
+    <p>ciao sono verde ah no aspetta</p>
+    <h2>ciao sono un altro colore</h2>
+    <h3>un altro colore ancora</h3>
+    bene, ma cosa succede se voglio un h3 che sia di un colore diverso? si usa l'id
+    <div>
+        <h2>heiiii</h2>
+        <p>il peggio dei siti anni 90</p>
+    </div>
+
+    <form action="">
+        <span>First name:</span> <input type="text" name="fname"><br>
+        Last name: <input type="text" name="lname"><br>
+        <input type="button" value="Submit">
+        <input type="reset" value="reset">
+    </form>
+
+    <p>osserva questo: sono in p quindi il testo è di un certo colore, ma adesso la parola <span>pizza</span> è di un
+        colore diverso, infatti
+        è in uno span. span sta dentro p quindi vince la regola più specifica (seconda regola).
+        La prima regola è che l'ultima regola per l'elemento vince.</p>
+
+    <h1 class="hiding">TESTO NASCOSTO MA NON VERAMENTE, IL COLORE DELLA SCRITTA è UGUALE A QUELLO DELLO SFONDO</h1>
+    <p id="par">ciao adesso questo è un paragrafo ma con l'id diverso ci faccio roba diversa</p>
+    <p class="hiding">questo è un paragrafo nascosto, sei riuscito a trovarmi?</p>
+    <h4>h4 h5 e h6 sono tutti dello stesso colore</h4>
+    <h5>visto?</h5>
+    <h6>riesci a leggermi?</h6>
+
+    ok aggiungiamo dei selettori
+    <form action="" method="">
+
+        <span class="selecting">Scrivi un messaggio di benvenuto:</span><input type="text" name="greetings">
+
+        <div>
+            <span class="selecting">Qui c'è qualcos'altro:</span><input type="text" name="sometext">
+        </div>
+        Ecco delle altre scelte
+        <div>
+            <input type="radio" id="oneid" name="somename" value="primascelta">
+            <label for="someid"><span class="selecting">Prima scelta</span></label>
+            <input type="radio" id="twoid" name="somename" value="secondascelta">
+            <label for="twoid"><span class="selecting">Seconda scelta</span></label>
+            <input type="radio" id="threeid" name="3name" values="terzascelta">
+            <label for="threeid"><span class="selecting">Terza scelta</span></label>
+        </div>
+    </form>
+</body>
+
+</html>
