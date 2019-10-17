@@ -3,7 +3,7 @@ p{
 }
 
 body {
-    background-color: wheat;
+    background-color: white;
 } 
 
 h1[class="red"]{
@@ -76,3 +76,30 @@ span.selecting{
 input[type=text]{
     color:red;
 }
+
+[type=text] {
+    background-color: olive;
+    }
+    [type=number] {
+    background-color: yellow;
+    }
+    input:hover {
+    color: blue;
+    }
+
+    table {
+        border: 2px solid black;
+        border-collapse: collapse;
+        Width: 50%;
+        }
+        td, th {
+        border: 1px solid red;
+        padding: 3px;
+        text-align: center;
+        }
+        th {
+        background-color: lightblue;
+        }
+        td {
+        background-color: lightgreen;
+        }
