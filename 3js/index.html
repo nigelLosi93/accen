@@ -1,14 +1,25 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <script src="js/basics.js"></script>
-    </head>
 
-    <body>
-        <p id="hello">
-            Ciao
-        </p>
-        
-    </body>
+<head>
+    <meta charset="utf-8">
+    <script src="js/basics.js"></script>
+</head>
+
+<body>
+    <p id="hello">
+        Ciao
+    </p>
+        <button onclick="sayhello()">Ciao</button>
+    <script>
+        function sayhello() {
+            document.getElementById("hello").innerHTML = "Hello World";
+            console.log('hello');
+        }
+    </script>
+
+
+
+</body>
+
 </html>
