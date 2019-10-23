@@ -6,18 +6,28 @@
     <script src="js/basics.js"></script>
 </head>
 
+<!-- nel head
+meta charset sempre una buona idea mettercelo;
+script src mi dice cosa fare per js, ricorda che dentro script
+la sintassi è diversa;
+posso importare con src, come con img o figure;
+se importo correttamente .js lo posso mettere in head (conviene?);
+altrimenti posso mettere lo script esplicito a fine pagina,
+che richiama una funzione oppure scrivo proprio l'algoritmo;
+NB studiare bene la sintassi e le funzioni di js;
+-->
+
 <body>
     <p id="hello">
         Ciao
     </p>
-        <button onclick="sayhello()">Ciao</button>
+    <button onclick="sayhello()">Ciao</button>
     <script>
-        function sayhello() {
-            document.getElementById("hello").innerHTML = "Hello World";
-            console.log('hello');
-        }
+        //function sayhello() {
+          //  document.getElementById("hello").innerHTML = "Hello World";
+            //console.log('hello');
+        //}
     </script>
-
 
 
 </body>

@@ -1,5 +1,4 @@
 function sayhello(){
-    let target = document.getElementById('hello');
-    document.innerHTML()='hello again!';
+    document.getElementById("hello").innerHTML = "Hello World";
     console.log('hello');
 }
