@@ -3,11 +3,7 @@ function digitsum(x) {
     let z = x.toString();
     let r = 0;
     for (let i = 0; i < z.length; i++) {
-        /*let park;
-        park = Number(z[i]);
-        r += park;
-        park = 0;*/
-        r+=Number(z[i]);
+        r += Number(z[i]);
     }
     return r;
 }
