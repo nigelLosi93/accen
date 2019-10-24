@@ -15,19 +15,18 @@ function digitsum2(x) {
     x = Math.abs(x);
     //converting decimal to integer
     let z = x.toString();
-    let lung = z.length;
     let point;
     let decimal = false;
-    for (let i = 0; i < lung; i++) {
+    for (let i = 0; i < z.length; i++) {
         if (z[i] === '.') { //in case the number is of the kind 348934.5892383
             point = i;
             decimal = true;
-            continue;
+            break;
         }
     }
 
     if (decimal === true) {
-        x = x * 10 ** (lung - point - 1);
+        x = x * 10 ** (z.length - point - 1);
     }
 
     let rest;
@@ -48,4 +47,4 @@ console.log(digitsum2(275));
 console.log(digitsum2(-12.34));
 console.log(digitsum2(1111111111111));
 
-//il codice dà problemi per numeri "grandi", di ordine >10**50 
+//il codice non funziona correttamente per numeri "grandi", di ordine >10**40 
