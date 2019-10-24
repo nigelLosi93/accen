@@ -28,11 +28,9 @@ function digitsum2(x) {
     if (decimal === true) {
         x = x * 10 ** (z.length - point - 1);
     }
-
-    let rest;
     let result = 0;
     while (x != 0) {
-        rest = x % 10;
+        let rest = x % 10;
         x = (x - rest) / 10;
         result += rest;
     }
