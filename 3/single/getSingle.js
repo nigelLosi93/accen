@@ -51,7 +51,7 @@ function getSingle3(v) { //utilizing a hash function
     let vect = Object.keys(ht);
     for (let i = 0; i < vect.length; i++) {
         if (ht[vect[i]]===true) {
-            return i;
+            return vect[i];
         }
     }
     return "Nessun valore singolo"
