@@ -17,6 +17,9 @@ function duplicate(v){
             j++;
         }
     }
+    if(dup.length===0){
+        return 'Nessun valore duplicato!';
+    }
     return dup;
 }
 
