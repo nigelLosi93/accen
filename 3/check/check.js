@@ -123,3 +123,8 @@ function callback3() {
         target.value += info[1] + '\n';
     }
 }
+
+function cancella(){
+    let target=document.getElementById('targettxt');
+    target.value='';
+}
