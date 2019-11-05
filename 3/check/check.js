@@ -58,7 +58,7 @@ function gattino(valore) {
         let sezione = document.getElementById('cat');
         sezione.appendChild(immagine);
     }
-    else if (valore === false && document.getElementById('img')!==null) {
+    else if (valore === false && document.getElementById('img') !== null) {
         let sezione = document.getElementById('img');
         sezione.remove();
     }
