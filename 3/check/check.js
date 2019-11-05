@@ -58,8 +58,68 @@ function gattino(valore) {
         let sezione = document.getElementById('cat');
         sezione.appendChild(immagine);
     }
-    else if (valore === false) {
+    else if (valore === false && document.getElementById('img')!==null) {
         let sezione = document.getElementById('img');
         sezione.remove();
+    }
+}
+
+function getInfo() {
+    let request = new XMLHttpRequest();
+    request.onload = callback;
+    request.open("GET", "tom.json");
+    request.send();
+}
+
+function callback() {
+    let target = document.getElementById('target');
+    if (this.status != 200) {
+        target.value += "[" + this.status + "]\n";
+        return;
+    }
+    let json = JSON.parse(this.responseText);
+    target.value += json.name + '\n';
+    target.value += json.job.title + '\n';
+    target.value += json.job.languages + '\n';
+}
+
+function getInfo2() {
+    let request = new XMLHttpRequest();
+    request.onload = callback2;
+    request.open("GET", "billy.json");
+    request.send();
+}
+
+function callback2() {
+    let target = document.getElementById('anothertarget');
+    if (this.status != 200) {
+        target.value += "[" + this.status + "]\n";
+        return;
+    }
+    let json = JSON.parse(this.responseText);
+    target.value += json.name + '\n';
+    target.value += json.job.title + '\n';
+    target.value += json.job.fields + '\n';
+}
+
+function getInfo3() {
+    let request = new XMLHttpRequest();
+    request.onload = callback3;
+    request.open('GET', 'tom.txt');
+    request.send();
+    console.log("sono entrato in getInfo3()");
+}
+
+function callback3() {
+    console.log("sono entrato in callback3()");
+    let target = document.getElementById("targettxt");
+    if (this.status != 200) {
+        target.value += "[" + this.status + "]\n";
+        return;
+    }
+    let vector = this.responseText.split(',');
+    for (let i = 0; i < vector.length; i++) {
+        let info = vector[i].split('=');
+        target.value += info[1] + '\n';
     }
 }

@@ -14,45 +14,55 @@
             <button type="submit">Send</button>
         </form>
     </div>
+
+
+    <div>
+        <form action="colorchange" onclick="return changeBgColor();">
+            <label for="color">Scrivi un colore</label>
+            <input id='color' placeholder="metti un colore"><br>
+            <button type="button">Send</button>
+        </form>
+    </div>
+
+    <p>Oppure scegli tra i seguenti colori</p>
+
+    <div>
+        <form action="colorchangeselect" onchange="return changeBgColorSelect();">
+            <select id='colorselect'>
+                <option value="red">red</option>
+                <option value="green">green</option>
+                <option value="blue">blue</option>
+                <option value="white">white</option>
+                <option value="black">black</option>
+                <option value="pink">pink</option>
+                <option value="orange">orange</option>
+                <option value="grey">grey</option>
+            </select>
+        </form>
+    </div>
+
+    Un input che cambia colore al resto del documento:<input type="text" onfocus="return changeParagraph();">
+
+    <p onclick="return loremIpsum();">Clicca qui per vedere Lorem Ipsum</p>
+
+    <p id='loremipsum'></p>
+
+    <p onclick="return loremIpsumDelete()">Clicca qui per cancellare Lorem Ipsum</p>
+
+    <button type='button' onclick="return gattino(true)">Clicca qui per vedere un gattino</button>
+    <button type='button' onclick="return gattino(false)">Clicca qui per non vedere più il gattino :(</button>
+
+    <div id='cat'></div>
+
+    <textarea id="target" rows='10' cols='50'></textarea>
+    <button onclick="getInfo();">Get programmer info</button>
+    <br>
+    <textarea id='anothertarget' rows='10' cols='50'></textarea>
+    <button onclick="getInfo2();">Get a physicist's info</button>
+    <br>
+    <textarea id="targettxt" rows='10' cols='50'></textarea>
+    <button onclick='getInfo3();'>Get info from .txt</button>
+
 </body>
 
-
-<div>
-    <form action="colorchange" onclick="return changeBgColor();">
-        <label for="color">Scrivi un colore</label>
-        <input id='color' placeholder="metti un colore"><br>
-        <button type="button">Send</button>
-    </form>
-</div>
-
 </html>
-
-<p>Oppure scegli tra i seguenti colori</p>
-
-<div>
-    <form action="colorchangeselect" onchange="return changeBgColorSelect();">
-        <select id='colorselect'>
-            <option value="red">red</option>
-            <option value="green">green</option>
-            <option value="blue">blue</option>
-            <option value="white">white</option>
-            <option value="black">black</option>
-            <option value="pink">pink</option>
-            <option value="orange">orange</option>
-            <option value="grey">grey</option>
-        </select>
-    </form>
-</div>
-
-Un input che cambia colore al resto del documento:<input type="text" onfocus="return changeParagraph();">
-
-<p onclick="return loremIpsum();">Clicca qui per vedere Lorem Ipsum</p>
-
-<p id='loremipsum'></p>
-
-<p onclick="return loremIpsumDelete()">Clicca qui per cancellare Lorem Ipsum</p>
-
-<button type='button' onclick="return gattino(true)">Clicca qui per vedere un gattino</button>
-<button type='button' onclick="return gattino(false)">Clicca qui per non vedere più il gattino :(</button>
-
-<div id='cat'></div>

@@ -1,0 +1,13 @@
+{
+    "name": "billy",
+    "job" : {
+        "title" : "physicist",
+        "fields" : ["particle physics",
+            " high energy physics",
+            " physics beyond the Standard Model",
+            " SM phenomenology",
+            " N3LO Parton Distribution Functions (PDFs)"
+        ]
+    }
+
+}
