@@ -1,0 +1,13 @@
+{
+    "nome": "Nigel",
+    "lavoro": {
+        "titolo": "developer",
+        "linguaggi": [
+            "JavaScript",
+            "HTML",
+            "CSS",
+            "C++",
+            "Matlab"
+        ]
+    }
+}
