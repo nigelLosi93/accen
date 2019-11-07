@@ -11,5 +11,16 @@ function callback() {
         target.value += "[" + this.status + "]\n";
         return;
     }
-    document.getElementById("nome").value="Nigel";
+    let json = JSON.parse(this.responseText);
+    target.value = json.nome;
+
+    //let targetjob = document.getElementById("lavoro");
+    document.getElementById("lavoro").value = json.lavoro.titolo;
+
+    let vectorling = Object.values(json.lavoro.linguaggi);
+    for (let i in vectorling) {
+        if (vectorling[i] === document.getElementById(vectorling[i]).id) {
+            document.getElementById(vectorling[i]).checked = true;
+        }
+    }
 }

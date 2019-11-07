@@ -3,11 +3,11 @@
     "lavoro": {
         "titolo": "developer",
         "linguaggi": [
-            "JavaScript",
-            "HTML",
-            "CSS",
-            "C++",
-            "Matlab"
+            "js",
+            "html",
+            "css",
+            "cpp",
+            "matlab"
         ]
     }
 }
