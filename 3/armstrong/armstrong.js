@@ -15,12 +15,12 @@ function isArmstrong(value) {
     }
 }
 
-console.log(isArmstrong(153));
+/*console.log(isArmstrong(153));
 console.log(isArmstrong(245));
 console.log(isArmstrong(-123));
 console.log(isArmstrong(0));
 console.log(isArmstrong(true));
-console.log(isArmstrong("hello"));
+console.log(isArmstrong("hello"));*/
 
 function isPangram(value) {
     if (typeof (value) !== "string") {
@@ -48,9 +48,23 @@ function isPangram(value) {
     }
 }
 
-console.log(isPangram("ciao"));
+/*console.log(isPangram("ciao"));
 console.log(isPangram("qwertyuioplkjhgfdsazxcvbnm"));
 console.log(isPangram(5));
 console.log(isPangram(true));
 console.log(isPangram("abcdefgzxmvnbbalskdfhghgqpwoeiruty"));
-console.log(isPangram("qm"));
+console.log(isPangram("qm"));*/
+
+function coseConVettori() {
+    let vettore = [4, 3, 5, 1, 7, 12];
+    //vettore.fill(Math.floor(Math.random() * 100));
+    vettore.sort((left, right) => left == right ? 0 : left < right ? 1 : -1);
+    console.log(vettore);
+    vettore=vettore.slice(1,6);
+    console.log(vettore);
+    vettore = vettore.filter(value => value % 2);
+    console.log(vettore);
+    return "done";
+}
+
+console.log(coseConVettori());
