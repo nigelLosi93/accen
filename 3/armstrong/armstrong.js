@@ -15,12 +15,12 @@ function isArmstrong(value) {
     }
 }
 
-/*console.log(isArmstrong(153));
+console.log(isArmstrong(153));
 console.log(isArmstrong(245));
 console.log(isArmstrong(-123));
 console.log(isArmstrong(0));
 console.log(isArmstrong(true));
-console.log(isArmstrong("hello"));*/
+console.log(isArmstrong("hello"));
 
 function isPangram(value) {
     if (typeof (value) !== "string") {
