@@ -18,7 +18,7 @@ class Dog extends Animal implements Brushable {
         this.race = race;
     }
     brush(): string {
-        return "I am brushing a dog called " + super.name + " of race " + this.race;
+        return "I am brushing a dog called " + this.name + " of race " + this.race;
     }
 }
 
@@ -29,7 +29,7 @@ class Cat extends Animal implements Brushable {
         this.race = race;
     }
     brush(): string {
-        return "I am brushing a cat called " + super.name + " of race " + this.race;
+        return "I am brushing a cat called " + this.name + " of race " + this.race;
     }
 }
 
@@ -53,7 +53,7 @@ class TeddyBear extends Toy implements Brushable {
         this.color = color;
     }
     brush(): string {
-        return "I am brushing a toy called " + super.name + " of color " + this.color;
+        return "I am brushing a toy called " + this.name + " of color " + this.color;
     }
 }
 

@@ -15,7 +15,7 @@ class Dog extends Animal {
         this.race = race;
     }
     brush() {
-        return "I am brushing a dog called " + super.name + " of race " + this.race;
+        return "I am brushing a dog called " + this.name + " of race " + this.race;
     }
 }
 class Cat extends Animal {
@@ -24,7 +24,7 @@ class Cat extends Animal {
         this.race = race;
     }
     brush() {
-        return "I am brushing a cat called " + super.name + " of race " + this.race;
+        return "I am brushing a cat called " + this.name + " of race " + this.race;
     }
 }
 class Toy {
@@ -44,7 +44,7 @@ class TeddyBear extends Toy {
         this.color = color;
     }
     brush() {
-        return "I am brushing a toy called " + super.name + " of color " + this.color;
+        return "I am brushing a toy called " + this.name + " of color " + this.color;
     }
 }
 let giocattoli = [new TeddyBear("bobo", "brown"), new TeddyBear("balù", "black & white")];
