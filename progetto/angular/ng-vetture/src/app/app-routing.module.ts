@@ -9,6 +9,9 @@ import { InsertBrandComponent } from './insert-brand/insert-brand.component';
 import { SearchBrandsComponent } from './search-brands/search-brands.component';
 import { ShowBrandsComponent } from './show-brands/show-brands.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { InsertModelComponent } from './insert-model/insert-model.component';
+import { SearchModelComponent } from './search-model/search-model.component';
+import { ShowModelsComponent } from './show-models/show-models.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -30,6 +33,21 @@ const routes: Routes = [
       {
         path: 'show-brands',
         component: ShowBrandsComponent,
+        outlet: 'content'
+      },
+      {
+        path: 'insert-model',
+        component: InsertModelComponent,
+        outlet: 'content'
+      },
+      {
+        path: 'search-model',
+        component: SearchModelComponent,
+        outlet: 'content'
+      },
+      {
+        path: 'show-models',
+        component: ShowModelsComponent,
         outlet: 'content'
       }
     ]
