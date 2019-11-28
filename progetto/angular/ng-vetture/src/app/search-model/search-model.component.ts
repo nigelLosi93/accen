@@ -12,9 +12,42 @@ import { QueryResult } from '../model/query-result';
 })
 export class SearchModelComponent implements OnInit {
 
-  constructor() { }
+  info: FormGroup = this.fb.group({
+    nome: ['', Validators.required]
+  });
+  listaModelli: Array<Modello>;
+  modelliTrovati: number;
+
+  messaggio: string;
+
+  isCollapsed = true;
+
+  constructor(private fb: FormBuilder, private modelSvc: ModelDataService) { }
 
   ngOnInit() {
+  }
+
+  onSubmit(toolTip: any) {
+    if (this.info.valid) {
+      if (toolTip.isOpen()) {
+        toolTip.close();
+      }
+      this.modelSvc.getModelByName(this.info.value.nome)
+        .subscribe((response: any) => {
+          const queryResult: QueryResult = response;
+          this.listaModelli = queryResult.esito.modello;
+          this.modelliTrovati = this.listaModelli.length;
+          this.isCollapsed = false;
+        }, (error: any) => {
+          this.messaggio = 'HTTP error!<br><br>' + error.message;
+          this.isCollapsed = false;
+        });
+    } else {
+      if (!toolTip.isOpen()) {
+        toolTip.open();
+      }
+      this.isCollapsed = true;
+    }
   }
 
 }

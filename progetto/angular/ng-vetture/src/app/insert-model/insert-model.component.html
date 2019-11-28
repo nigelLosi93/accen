@@ -12,7 +12,8 @@
                     'form-control mb-1': true,
                     'input-err': nomeCtrl
                    }" placeholder="nome" required autofocus (input)="check('nome')" (blur)="check('nome')">
-            <small class="text-danger" [ngStyle]="{ 'visibility': nomeCtrl ? 'visible' : 'hidden' }">Enter the model name</small>
+            <small class="text-danger" [ngStyle]="{ 'visibility': nomeCtrl ? 'visible' : 'hidden' }">Enter the model
+              name</small>
           </div>
         </div>
         <div class="form-row">
@@ -22,7 +23,8 @@
                     'form-control mb-1': true,
                     'input-err': cilindrataCtrl
                    }" placeholder="cilindrata" required (input)="check('cilindrata')" (blur)="check('cilindrata')">
-            <small class="text-danger" [ngStyle]="{ 'visibility': cilindrataCtrl ? 'visible' : 'hidden' }">Enter a number 
+            <small class="text-danger" [ngStyle]="{ 'visibility': cilindrataCtrl ? 'visible' : 'hidden' }">Enter a
+              number
               (min 3 digits, max 5)
             </small>
           </div>
@@ -32,18 +34,21 @@
                      'form-control mb-1': true,
                      'input-err': potenzaCtrl
                    }" placeholder="potenza" required (input)="check('potenza')" (blur)="check('potenza')">
-            <small class="text-danger" [ngStyle]="{ 'visibility': potenzaCtrl ? 'visible' : 'hidden' }">Enter a number 
+            <small class="text-danger" [ngStyle]="{ 'visibility': potenzaCtrl ? 'visible' : 'hidden' }">Enter a number
               (min 2 digits, max 4)
             </small>
           </div>
           <div class="form-group col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-            <label>Marca:</label><br>
-            <select>
-              <option placeholder="marca"></option>
-              <option>option1</option>
-              <option>option2</option>
-              <option>option3</option>
+            <label for="marca">Marca:</label><br>
+            <select formControlName="marca" id="marca" [ngClass]="{
+              'form-control mb-1':true,
+              'input-err':marcaCtrl
+            }" required (input)="check('marca')" (blur)="check('marca')">
+              <option></option>
+              <option *ngFor='let marca of listaMarche'>{{marca.nome}}</option>
             </select>
+            <small class="text-danger" [ngStyle]="{ 'visibility': marcaCtrl ? 'visible' : 'hidden' }">Enter a brand
+            </small>
           </div>
         </div>
         <div class="form-row">
